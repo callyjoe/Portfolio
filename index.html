@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calvin Akiweley | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+</head>   
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="up">
+        <div class="nav-logo">CA</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Hamburger button (mobile only) -->
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
+        </button>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWh1_R0t0Cg5IM40u2tFyiwywVk713Ztvw6lWzxR6376GSBg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer"><button class="nav-cta desktop-cta">Let's Begin</button></a>
+    </nav>
+
+    <!-- Mobile drawer menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-header">
+            <span class="mobile-logo">CA</span>
+            <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+                <!-- X icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <a class="mobile-link" href="#home" data-close>
+                <!-- Home icon -->
+                <svg class="mob-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/>
+                    <path d="M9 21V12h6v9"/>
+                </svg>
+                Home
+            </a>
+            <a class="mobile-link" href="#about" data-close>
+                <!-- Info icon -->
+                <svg class="mob-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="8" x2="12" y2="8" stroke-width="3"/>
+                    <line x1="12" y1="12" x2="12" y2="16"/>
+                </svg>
+                About
+            </a>
+            <a class="mobile-link" href="#skills" data-close>
+                <!-- Code icon -->
+                <svg class="mob-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"/>
+                    <polyline points="8 6 2 12 8 18"/>
+                </svg>
+                Skills
+            </a>
+            <a class="mobile-link" href="#contact" data-close>
+                <!-- Phone icon -->
+                <svg class="mob-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/>
+                </svg>
+                Contact
+            </a>
+        </nav>
+        <div class="mobile-footer-cta">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWh1_R0t0Cg5IM40u2tFyiwywVk713Ztvw6lWzxR6376GSBg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" style="display:block;"><button class="nav-cta mobile-cta-btn">Let's Begin</button></a>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- HERO -->
+    <header>
+        <div class="hero-content" id="home">
+            <div class="hero-tag">Available for freelance work</div>
+            <h1>Hi, I am<br /><span class="name-line">Calvin <span id="aki">Akiweley</span><br>Chaluatera</span></h1>
+            <p class="hero-role"><span class="role-badge">Website Developer</span></p>
+            <p class="hero-sub">Crafting digital experiences through clean code and creative design.</p>
+
+            <div class="btns">
+                <button class="cv-btn" id="cvDownloadBtn">
+                    <div class="icon">
+                        <img src="down-arrow.png" />
+                    </div>
+                    <span id="cv">Download CV</span>
+                </button>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWh1_R0t0Cg5IM40u2tFyiwywVk713Ztvw6lWzxR6376GSBg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" style="text-decoration:none;">
+                <button id="cnt" class="connect">
+                    <div class="cnt-img">
+                        <img src="global-connection.png" />
+                    </div>
+                    <span id="btn2">Let's Connect</span>
+                </button>
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+                    <p>Years Learning</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+                    <p>Projects Done</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+                    <p>Technologies</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-img-wrap">
+            <div class="img-ring"></div>
+            <div class="img-ring ring2"></div>
+            <img class="profile-pic" src="WhatsApp Image 2025-06-14 at 23.27.50.jpeg" alt="Calvin Akiweley" />
+            <div class="img-badge">BSc. IT</div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ABOUT -->
+        <section class="abt" id="about">
+            <div class="section-label">WHO I AM</div>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p id="spec">I have experience with various programming languages and frameworks, and I'm always excited to learn new technologies. I enjoy tackling challenges and finding creative solutions, whether it's through coding, designing websites, or even working on projects like hospital management systems or church media systems.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3976/3976628.png" alt="Education" />
+                            </span>
+                            <div>
+                                <strong>BSc. Information Technology</strong>
+                                <p>Currently enrolled and building real-world projects</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Problem Solver" />
+                            </span>
+                            <div>
+                                <strong>Problem Solver</strong>
+                                <p>From hospital systems to church media platforms</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1067/1067357.png" alt="Always Learning" />
+                            </span>
+                            <div>
+                                <strong>Always Learning</strong>
+                                <p>Excited by new technologies and creative challenges</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card-wrap">
+                    <div class="floating-card fc1">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" alt="Web" style="width:18px;height:18px;object-fit:contain;" /> Web Dev
+                    </div>
+                    <div class="floating-card fc2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png" alt="Backend" style="width:18px;height:18px;object-fit:contain;" /> Backend
+                    </div>
+                    <div class="floating-card fc3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1705/1705312.png" alt="Design" style="width:18px;height:18px;object-fit:contain;" /> UI/UX
+                    </div>
+                    <div class="about-circle-bg"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills-section">
+            <div class="section-label">WHAT I KNOW</div>
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-pill" style="--d:0ms">HTML5</div>
+                <div class="skill-pill" style="--d:60ms">CSS3</div>
+                <div class="skill-pill" style="--d:120ms">JavaScript</div>
+                <div class="skill-pill" style="--d:180ms">Python</div>
+                <div class="skill-pill" style="--d:240ms">SQL</div>
+                <div class="skill-pill" style="--d:300ms">Git</div>
+                <div class="skill-pill" style="--d:360ms">PHP</div>
+                <div class="skill-pill" style="--d:420ms">Responsive Design</div>
+            </div>
+        </section>
+
+        <!-- WHAT I DO -->
+        <section>
+            
+            <h2 id="main" class="section-title">Services</h2>
+            <div class="boxes">
+
+                <div class="box" data-index="01">
+                    <div class="box-icon-wrap">
+                        <img src="app-development.png" />
+                    </div>
+                    <div class="box-body">
+                        <h3>Software<br>Development</h3>
+                        <p class="box-desc">Building robust, scalable applications tailored to your needs — from desktop tools to full system solutions.</p>
+                        <div class="box-tags">
+                            <span>PHP</span><span>JavaScript</span><span>Systems</span>
+                        </div>
+                    </div>
+                    <div class="box-number">01</div>
+                </div>
+
+                <div class="box" data-index="02">
+                    <div class="box-icon-wrap">
+                        <img src="code.png" />
+                    </div>
+                    <div class="box-body">
+                        <h3>Web<br>Development</h3>
+                        <p class="box-desc">Turning designs into fast, functional websites using modern web technologies and best practices.</p>
+                        <div class="box-tags">
+                            <span>HTML</span><span>CSS</span><span>JS</span>
+                        </div>
+                    </div>
+                    <div class="box-number">02</div>
+                </div>
+
+                <div class="box" data-index="03">
+                    <div class="box-icon-wrap">
+                        <img src="website.png" />
+                    </div>
+                    <div class="box-body">
+                        <h3>Web<br>Design</h3>
+                        <p class="box-desc">Crafting visually compelling, user-friendly interfaces that leave a lasting impression.</p>
+                        <div class="box-tags">
+                            <span>UI/UX</span><span>Figma</span><span>Design</span>
+                        </div>
+                    </div>
+                    <div class="box-number">03</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+            <div class="section-label">GET IN TOUCH</div>
+            <h2 class="section-title">Contact Me</h2>
+            <div class="content">
+                <div class="ct">
+                    <div class="ct-icon"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Person" /></div>
+                    <p class="ct-label">FULL NAME</p>
+                    <p class="ct-value">Calvin Aki</p>
+                </div>
+                <div class="ct">
+                    <div class="ct-icon"><img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" /></div>
+                    <p class="ct-label">EMAIL ADDRESS</p>
+                    <p class="ct-value"><a href="mailto:calvinakiweley51@gmail.com">calvinakiweley51@gmail.com</a></p>
+                </div>
+                <div class="ct">
+                    <div class="ct-icon"><img src="https://cdn-icons-png.flaticon.com/512/3976/3976628.png" alt="Course" /></div>
+                    <p class="ct-label">COURSE</p>
+                    <p class="ct-value">BSC. IT</p>
+                </div>
+                <div class="ct ct2">
+                    <div class="ct-icon"><img src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt="Phone" /></div>
+                    <p class="ct-label">PHONE NUMBER</p>
+                    <p class="ct-value"><a href="tel:0553859912">0553859912</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BACK TO TOP -->
+        <div class="top">
+            <a href="#up"><img src="up-arrow.png" /></a>
+            <p>Back to top</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-name">Calvin Akiweley</div>
+            <p class="footer-tagline">Building the web, one line at a time.</p>
+            <p class="footer-copy">Copyright reserved &copy;2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
